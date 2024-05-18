@@ -7,8 +7,8 @@ from .models import Category
 # Register your models here.
 
 
-class MyAdmin(TreeAdmin):
+class CategoryAdmin(TreeAdmin):
     form = movenodeform_factory(Category)
 
 
-admin.site.register(Category, MyAdmin)
+admin.site.register(Category, Category)
