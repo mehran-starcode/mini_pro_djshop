@@ -1,11 +1,19 @@
 from .common import *
 
-INSTALLED_APPS = [
-                     'daphne',
-                     'drf_spectacular',
-                     'django_extensions',
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '0.0.0.0',
+    '192.168.43.116'
+]
 
-                 ] + INSTALLED_APPS
+
+INSTALLED_APPS = [
+     'daphne',
+     'drf_spectacular',
+     'django_extensions',
+
+ ] + INSTALLED_APPS
 
 DATABASES = {
     'default': {

@@ -11,6 +11,7 @@ class CategoryViewSet(viewsets.ReadOnlyModelViewSet):  # &              ( ViewSe
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
+
 # class Category_CB(View):                        (  Simple Class Base View  )
 #
 #     def get(self, request):
