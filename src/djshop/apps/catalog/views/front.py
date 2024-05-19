@@ -14,8 +14,8 @@ from djshop.apps.catalog.models import Category
 class Category_CB(View):
 
     def get(self, request):
-        return HttpResponse("Result")
+        return HttpResponse("Simple Class Base View Result")
 
 
 def category(request):
-    return render(request=request, template_name='', context={})
+    return HttpResponse('This Result is from Func Base View')

@@ -1,5 +1,6 @@
 from django.urls import path
-from djshop.apps.catalog.views.front import Category_CB
+from djshop.apps.catalog.views.front import Category_CB, category
+
 # from rest_framework.routers import SimpleRouter
 #
 # from src.djshop.apps.catalog.views.front import CategoryViewSet
@@ -8,5 +9,6 @@ from djshop.apps.catalog.views.front import Category_CB
 # router.register(prefix='categories', viewset=CategoryViewSet)
 
 urlpatterns = [
-    path('test', Category_CB.as_view()),
+    path('simple-classbase-view', Category_CB.as_view()),
+    path('funcbase-view', category, {}),
 ]
